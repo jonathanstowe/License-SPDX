@@ -1,4 +1,6 @@
 
+use v6;
+
 use JSON::Name;
 use JSON::Class;
 class License::SPDX does JSON::Class {
@@ -16,6 +18,26 @@ class License::SPDX does JSON::Class {
     has Str     $.license-list-version  is json-name('licenseListVersion');
     has Str     $.release-date          is json-name('releaseDate');
     has License @.licenses;
+
+    has License %.license-by-id         is json-skip;
+
+    method license-by-id( --> Hash ) {
+        %!license-by-id ||= @!licenses.map(-> $l { $l.license-id => $l }).Hash;
+    }
+
+    method get-license( Str:D $id --> License ) {
+        self.license-by-id{$id} || License;
+    }
+
+    has Str @.license-ids               is json-skip;
+
+    method license-ids( --> Array ) {
+        @!license-ids ||= self.license-by-id.keys.Array;
+    }
+
+    multi method new(*%v where { not $_.keys }) {
+        self.from-json(%?RESOURCES<data/licenses.json>.slurp);
+    }
 }
 
 # vim: ft=perl6
