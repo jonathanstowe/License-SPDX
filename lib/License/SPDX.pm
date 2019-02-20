@@ -16,7 +16,7 @@ class License::SPDX does JSON::Class {
         has Bool    $.is-fsf-libre              is json-name('isFsfLibre');
     }
     has Str     $.license-list-version  is json-name('licenseListVersion');
-    has Str     $.release-date          is json-name('releaseDate');
+    has Date     $.release-date          is json-name('releaseDate') is unmarshalled-by( -> $d { Date.new($d) });
     has License @.licenses;
 
     has License %.license-by-id         is json-skip;
