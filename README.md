@@ -12,7 +12,7 @@ my $l = License::SPDX.new;
 
 if $l.get-license('Artistic-2.0') -> $license {
 	pass "licence is good";
-	if $license.is-deprecated-license-id {
+	if $license.is-deprecated-license {
 		warn "deprecated licence";
     }
 }

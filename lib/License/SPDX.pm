@@ -6,7 +6,7 @@ use JSON::Class;
 class License::SPDX does JSON::Class {
     class License does JSON::Class {
         has Str     $.name;
-        has Bool    $.is-deprecated-license-id  is json-name('isDeprecatedLicenseId');
+        has Bool    $.is-deprecated-license     is json-name('isDeprecatedLicenseId');
         has Bool    $.is-osi-approved           is json-name('isOsiApproved');
         has Str     $.license-id                is json-name('licenseId');
         has Str     $.reference;
