@@ -1,7 +1,7 @@
 {
   "name": "License::SPDX",
   "description": "The SPDX licence list",
-  "version": "0.0.1",
+  "version": "3.4.0",
   "auth": "github:jonathanstowe",
   "api": "1.0",
   "support": {
