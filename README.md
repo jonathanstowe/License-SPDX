@@ -34,7 +34,7 @@ The intention is to update this with a new license list (and up the version,) ev
 
 ## Installation
 
-Assuming that you have a working Rakudo Perl 6 compiler you should be able to install this using *zef* :
+Assuming that you have a working Rakudo Raku compiler you should be able to install this using *zef* :
 
     zef install License::SPDX
 
