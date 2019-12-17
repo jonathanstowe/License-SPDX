@@ -99,7 +99,7 @@ or a License type object if it isn't found.
 =end pod
 
 use JSON::Name;
-
+use JSON::Marshal;
 use JSON::Class;
 
 class License::SPDX does JSON::Class {
