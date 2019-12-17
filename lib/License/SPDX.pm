@@ -100,7 +100,7 @@ or a License type object if it isn't found.
 
 use JSON::Name;
 
-use JSON::Class;
+use JSON::Class:ver<0.0.14+>;
 
 class License::SPDX does JSON::Class {
     class License does JSON::Class {

@@ -1,7 +1,7 @@
 {
   "name": "License::SPDX",
   "description": "The SPDX licence list",
-  "version": "3.7.0",
+  "version": "3.7.1",
   "auth": "github:jonathanstowe",
   "api": "1.0",
   "support": {
@@ -23,7 +23,7 @@
   "build-depends": [ ],
   "source-url": "https://github.com/jonathanstowe/License-SPDX.git",
   "depends": [
-	"JSON::Class"
+	"JSON::Class:ver<0.0.14+>"
   ],
   "provides": {
 	"License::SPDX" : "lib/License/SPDX.pm"
