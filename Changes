@@ -1,4 +1,6 @@
-v3.7.0		Sun  9 Feb 19:25:37 GMT 2020
+v3.9.0		Sat 16 May 12:31:59 BST 2020
+	* Updated license list to 3.9
+v3.8.0		Sun  9 Feb 19:25:37 GMT 2020
 	* Updated license list to 3.8
 v3,7,1		Tue 17 Dec 20:33:17 GMT 2019
 	* Specify minimum of JSON::Class
