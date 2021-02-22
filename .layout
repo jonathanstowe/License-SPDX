@@ -4,10 +4,6 @@
       "name": "t",
       "children": [
         {
-          "type": "file",
-          "name": "001-meta.t"
-        },
-        {
           "name": "020-methods.t",
           "type": "file"
         },

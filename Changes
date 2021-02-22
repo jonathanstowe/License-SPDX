@@ -1,3 +1,5 @@
+v3.11.1		Mon 22 Feb 18:15:09 GMT 2021
+	* Remove META test due to circular dependency
 v3.11.0		Mon 30 Nov 13:31:25 GMT 2020
 	* Update license list to 3.11
 v3.10.0		Tue  4 Aug 11:07:21 BST 2020

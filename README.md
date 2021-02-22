@@ -2,9 +2,11 @@
 
 Abstraction over the [SPDX License List](https://spdx.org/licenses/)
 
+![Build Status](https://github.com/jonathanstowe/License-SPDX/workflows/CI/badge.svg)
+
 ## Synopsis
 
-```perl6
+```raku
 
 use License::SPDX;
 
@@ -34,7 +36,7 @@ The intention is to update this with a new license list (and up the version,) ev
 
 ## Installation
 
-Assuming that you have a working Rakudo Raku compiler you should be able to install this using *zef* :
+Assuming that you have a working Rakudo compiler you should be able to install this using *zef* :
 
     zef install License::SPDX
 
@@ -51,7 +53,7 @@ suggestions or patches etc please send them to https://github.com/jonathanstowe/
 
 This is free software, please the [LICENCE](LICENCE) in the distribution.
 
-© Jonathan Stowe 2019
+© Jonathan Stowe 2019-2021
 
 The SPDX Data licensing is described [here](https://github.com/spdx/license-list-data/blob/master/accessingLicenses.md#tech-report-license),
 the JSON data is included verbatim from source.
