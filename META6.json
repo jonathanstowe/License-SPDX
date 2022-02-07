@@ -1,7 +1,7 @@
 {
   "name": "License::SPDX",
   "description": "The SPDX licence list",
-  "version": "3.15.0",
+  "version": "3.16.0",
   "auth": "github:jonathanstowe",
   "api": "1.0",
   "support": {
@@ -26,7 +26,7 @@
 	"JSON::Class:ver<0.0.14+>"
   ],
   "provides": {
-	"License::SPDX" : "lib/License/SPDX.pm"
+	"License::SPDX" : "lib/License/SPDX.rakumod"
   },
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"

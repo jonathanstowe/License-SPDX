@@ -44,7 +44,7 @@
           "purpose": null,
           "children": [
             {
-              "name": "SPDX.pm",
+              "name": "SPDX.rakumod",
               "type": "file"
             }
           ],
