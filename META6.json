@@ -1,33 +1,34 @@
 {
-  "name": "License::SPDX",
+  "tags": [
+    "licence",
+    "license",
+    "SPDX"
+  ],
+  "provides": {
+    "License::SPDX": "lib/License/SPDX.rakumod"
+  },
+  "raku": "6.d",
   "description": "The SPDX licence list",
-  "version": "3.17.0",
-  "auth": "github:jonathanstowe",
   "api": "1.0",
+  "build-depends": [
+  ],
   "support": {
     "email": "jns+gh@gellyfish.co.uk",
     "source": "https://github.com/jonathanstowe/License-SPDX.git"
   },
-  "perl": "6.d",
-  "raku": "6.d",
-  "test-depends": [ ],
-  "license": "Artistic-2.0",
-  "tags": [
-     "licence",
-     "license",
-     "SPDX"
-  ],
-  "resources": [
-	"data/licenses.json"
-  ],
-  "build-depends": [ ],
   "source-url": "https://github.com/jonathanstowe/License-SPDX.git",
-  "depends": [
-	"JSON::Class:ver<0.0.14+>"
+  "version": "3.17.1",
+  "resources": [
+    "data/licenses.json"
   ],
-  "provides": {
-	"License::SPDX" : "lib/License/SPDX.rakumod"
-  },
+  "depends": [
+    "JSON::Class:ver<0.0.14+>"
+  ],
+  "name": "License::SPDX",
+  "test-depends": [
+  ],
+  "auth": "zef:jonathanstowe",
+  "license": "Artistic-2.0",
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
   ],
