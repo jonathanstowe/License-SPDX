@@ -17,7 +17,7 @@
     "source": "https://github.com/jonathanstowe/License-SPDX.git"
   },
   "source-url": "https://github.com/jonathanstowe/License-SPDX.git",
-  "version": "3.19.0",
+  "version": "3.20.0",
   "resources": [
     "data/licenses.json"
   ],
