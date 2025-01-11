@@ -53,7 +53,7 @@ suggestions or patches etc please send them to https://github.com/jonathanstowe/
 
 This is free software, please the [LICENCE](LICENCE) in the distribution.
 
-© Jonathan Stowe 2019-2021
+© Jonathan Stowe 2019-2025
 
 The SPDX Data licensing is described [here](https://github.com/spdx/license-list-data/blob/master/accessingLicenses.md#tech-report-license),
 the JSON data is included verbatim from source.
