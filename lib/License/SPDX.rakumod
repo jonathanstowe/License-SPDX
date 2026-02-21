@@ -53,7 +53,7 @@ This is a list of the L<License::SPDX::License> objects from the list.
 
 =head2 License::SPDX::License
 
-=head3 reference 
+=head3 reference
 
 Reference to the HTML format for the license file.  This is relative to the license file repository root.
 
@@ -61,27 +61,27 @@ Reference to the HTML format for the license file.  This is relative to the lice
 
 True if the entire license is deprecated.
 
-=head3 details-url 
+=head3 details-url
 
 URL to a JSON file containing the license detailed information. This may be relative to the source of the JSON list.
 
-=head3 reference-number 
+=head3 reference-number
 
 Generated number
 
-=head3 name 
+=head3 name
 
 License name
 
-=head3 license-id 
+=head3 license-id
 
 License identifier - this is the common identifier that should be used in the META6 license field.
 
-=head3 see-also 
+=head3 see-also
 
 A list of cross reference URL pointing to additional copies of the license.
 
-=head3 is-osi-approved 
+=head3 is-osi-approved
 
 A Bool that indicates if the OSI has approved the license
 
@@ -115,7 +115,7 @@ class License::SPDX does JSON::Class {
         has Bool    $.is-fsf-libre              is json-name('isFsfLibre');
     }
     has Str     $.license-list-version  is json-name('licenseListVersion');
-    has Date     $.release-date          is json-name('releaseDate') is unmarshalled-by( -> $d { Date.new($d) });
+    has Date    $.release-date          is json-name('releaseDate') is unmarshalled-by( -> $d { DateTime.new($d).Date });
     has License @.licenses;
 
     has License %.license-by-id         is json-skip;
